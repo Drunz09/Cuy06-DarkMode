@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+
+  background-color: #000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: aliceblue;
+  background-color: #301794;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.berserk {
+  background-color: red;
+  color: aqua;
+  animation: jerek 0.5s infinite;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#info {
+  font-size: 0.8rem;
+  padding: 1rem;
+  font-weight: 300;
+}
+
+@keyframes jerek {
+  0% {
+    background-color: red;
+    color: #301794;
+  }
+  20% {
+    background-color: green;
+    color: aquamarine;
+  }
+  40% {
+    background-color: yellow;
+    color: beige;
+  }
+  60% {
+    background-color: blue;
+    color: cadetblue;
+  }
+  80% {
+    background-color: black;
+    color: brown;
+  }
+  100% {
+    background-color: aliceblue;
+    color: cornflowerblue;
+  }
+}
